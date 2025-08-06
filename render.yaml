@@ -4,6 +4,3 @@ services:
     runtime: python
     buildCommand: ""
     startCommand: python app.py
-    envVars:
-      - key: PORT
-        value: 5000
