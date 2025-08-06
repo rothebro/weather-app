@@ -11,10 +11,12 @@ def home():
     days = request.args.get('days')
 
     html = """
-        <form method="get">
-            <input type="text" name="city" placeholder="Enter a city">
-            <input type="number" name="days" placeholder="How many days? (1–10)" min="1" max="10">
-            <button type="submit">Get Weather</button>
+    <h3>Check the forecast</h3>
+
+        <form method="POST">
+            <input type="text" name="city" placeholder="Enter a city" style="width: 150px; margin-right: 5px;">
+            <input type="number" name="days" placeholder="1–10 days" min="1" max="10" style="width: 120px; margin-right: 5px;">
+            <input type="submit" value="Get Weather">
         </form>
     """
 
